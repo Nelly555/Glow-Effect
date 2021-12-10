@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    color:olive;
+}
+
+
+.mianBox{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #152c11; 
+}
+
+P{
+    color:#4e960a;
+}
+
+.neonText{
+padding: 1rem 1rem;
+text-align: center;
+}
+
+.neonText h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    animation: light 1.5s ease-in-out;
+    infinite alternate;
+}
+
+@keyframes light{
+    from{
+      color:#fff ;
+      text-shadow: 0 0 10px #00fff2, 0 0
+      20px #00fff2, 0 0 30px #00fff2, 0 0 40px 
+      #00fff2, 0 0 70px #00fff2, 0 0 90px
+      #00fff2;
+    }
+    
+    to {
+        color: lightgray;
+        text-shadow: 0 0 20px #00fff2, 0
+        30px #00fff2, 0 0 40px #00fff2, 0 0
+        #00fff2, 0 0 60px #00fff2, 0 1 90px
+        #00fff2;
+    }
+}
